@@ -112,7 +112,7 @@ nav .fa{
 }
 @media (max-width: 700px) {
     .main-header{
-        min-height: 110vh;
+        min-height: 140vh;
         width: 100%;
     }
     nav .navtext{
@@ -121,7 +121,6 @@ nav .fa{
     }
     .main-text h1{
         font-size: 45px;
-        margin-top: 5%;
     }
     .nav-links ul li{
         display: block;
@@ -172,8 +171,8 @@ nav .fa{
         font-size: 18px;
     }
     .nav-links #hidefa{
-        padding-top: 0;
-        padding-right: 0;
+        padding-top: 2em;
+        padding-right: 2em;
     }
     nav img{
         width: 50px;
@@ -843,8 +842,7 @@ nav .fa{
     padding: 0 2.5rem;
 }
 .contact-form form{
-    padding: 0 1.5rem;
-    
+    padding: 0 1.5rem; 
 }
 .contact-form input, .contact-form textarea{
     width: 100%;
@@ -866,7 +864,7 @@ nav .fa{
 .contact-form button{
     background-color: var(rgb(0, 128, 0));
     padding: 1rem 2rem;
-    color: blue;
+    color: rgb(0, 0, 0);
     border-radius: 2rem;
     border: none;
 }
@@ -874,8 +872,7 @@ nav .fa{
     .map iframe{
         width: 100%;
         height: 50%;
-        display: flex;
-        margin-top: 50%;
+        margin-top: 20%;
         margin-left: 1rem;
     }
     .contact{
@@ -884,5 +881,39 @@ nav .fa{
     }
     .contact-main{
         height: 60vh;
+    }
+    .contact-form h1{
+        color: #000000;
+        font: 500 1rem;
+        padding: 0 2rem;
+    }
+    .contact-form form{
+        padding: 0 1.5rem; 
+    }
+    .contact{
+        height: 55vh;
+        width: 95vw;
+    }
+    .contact-form input, .contact-form textarea{
+        width: 100%;
+        padding: .5rem;
+        background-color: unset;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .contact-form textarea{
+        height: 2.5rem;
+        resize: none;
+    }
+    .contact-form button{
+        padding: .2rem 3rem;
+        border-radius: 1rem;
+        border: none;
+    }
+}
+@media (max-width: 400px){
+    .map iframe{
+        margin-top: 50%;
     }
 }
