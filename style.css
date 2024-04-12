@@ -111,6 +111,10 @@ nav .fa{
     display: none;
 }
 @media (max-width: 700px) {
+    .main-header{
+        min-height: 110vh;
+        width: 100%;
+    }
     nav .navtext{
         font-size: 38px;
         margin-left: -6em;
@@ -149,6 +153,42 @@ nav .fa{
     }
     .main-text p{
         font-size: 24px;
+    }
+    .main-text a{
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 700px) {
+    nav .navtext{
+        font-size: 30px;
+        margin-left: -2em;
+    }
+    .main-text h1{
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .main-text p{
+        font-size: 18px;
+    }
+    .nav-links #hidefa{
+        padding-top: 0;
+        padding-right: 0;
+    }
+    nav img{
+        width: 50px;
+        margin-top: .1em;
+        margin-bottom: .1em;
+        float: left;
+    }
+    .nav-links{
+        width: 250px;
+        right: -250px;
+    }
+    nav .fa{
+        display: block;
+        color: #09ff00;
+        margin: 5px;
+        font-size: 15px;
     }
 }
 
