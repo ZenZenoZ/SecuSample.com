@@ -917,3 +917,16 @@ nav .fa{
         margin-top: 50%;
     }
 }
+
+/*---------FOOTER---------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 28px;
+    z-index: 1000;
+}
+
+footer p {
+	margin: 0;
+}
