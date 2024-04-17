@@ -158,6 +158,10 @@ nav .fa{
     }
 }
 @media (max-width: 400px) {
+    .main-header{
+        min-height: 125vh;
+        width: 100%;
+    }
     nav .navtext{
         font-size: 30px;
         margin-left: -2em;
@@ -719,6 +723,25 @@ nav .fa{
     .about-title .about-h1{
         font-size: 35px;
     }
+    .about-overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(60, 255, 0, 0.7);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: 1s ease;
+    }
+}
+@media (max-width: 400px){
+    .about-title .about-h1{
+        font-size: 30px;
+    }
+    .about-container h4{
+        font-size: 5vw;
+    }
 }
 /*--------About3---------*/
 .about-main3{
@@ -862,14 +885,37 @@ nav .fa{
     resize: none;
 }
 .contact-form button{
-    background-color: var(rgb(0, 128, 0));
+    /*background-color: var(rgb(0, 128, 0));
     padding: 1rem 2rem;
     color: rgb(0, 0, 0);
     border-radius: 2rem;
     border: none;
     margin-bottom: 4em;
     margin-top: 0em;
+    font-weight: bold;
+    text-transform: uppercase;*/
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 4em;
+    margin-top: 0em;
 }
+.contact-form button:active{
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
 @media (max-width: 700px){
     .map iframe{
         width: 100%;
@@ -909,14 +955,17 @@ nav .fa{
         resize: none;
     }
     .contact-form button{
-        padding: .2rem 3rem;
-        border-radius: 1rem;
-        border: none;
+        padding: 0.25em 0.75em;
     }
 }
 @media (max-width: 400px){
     .map iframe{
         margin-top: 50%;
+    }
+    .contact{
+        height: 90%;
+        width: 90%;
+        padding-bottom: 20em;
     }
 }
 
@@ -931,4 +980,24 @@ footer {
 
 footer p {
 	margin: 0;
+}
+@media (max-width: 700px){
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 15px;
+        z-index: 1000;
+        margin: 0;
+    }
+}
+@media (max-width: 400px){
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 15px;
+        z-index: 1000;
+        margin-bottom: 1em;
+    }
 }
