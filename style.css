@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -825,6 +824,7 @@ nav .fa{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 2em;
 }
 .contact-form::before{
     position: absolute;
@@ -839,7 +839,7 @@ nav .fa{
 .contact-form h1{
     color: #000000;
     font: 500 1.8rem;
-    padding: 0 2.5rem;
+    padding: 0 2rem;
 }
 .contact-form form{
     padding: 0 1.5rem; 
@@ -852,10 +852,10 @@ nav .fa{
     background-color: unset;
     color: rgb(0, 0, 0);
     font-size: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: .1rem;
 }
 .contact-form input:not(:first-child), .contact-form textarea, .contact-form button{
-    margin-top: .8rem;
+    margin-top: .2rem;
 }
 .contact-form textarea{
     height: 6rem;
@@ -867,6 +867,8 @@ nav .fa{
     color: rgb(0, 0, 0);
     border-radius: 2rem;
     border: none;
+    margin-bottom: 4em;
+    margin-top: 0em;
 }
 @media (max-width: 700px){
     .map iframe{
@@ -923,8 +925,8 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 25px;
-    z-index: 100;
+    height: 28px;
+    z-index: 1000;
 }
 
 footer p {
