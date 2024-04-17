@@ -1,3 +1,4 @@
+//nav
 var navLinks = document.getElementById("navLinks");
 function showMenu(){
     navLinks.style.right="0";
@@ -5,3 +6,20 @@ function showMenu(){
 function hideMenu(){
     navLinks.style.right="-300px";
 }
+//up
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+  
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1000, function(){
+     
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
