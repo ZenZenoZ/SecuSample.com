@@ -15,14 +15,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="main-header">
+    <section class="main-header" id="arrowupbtn">
         <nav>
             <a href="index.html"><img src="./img/ptclogo.png"></a>
             <label class="navtext">SecuPateros</label>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()" id="hidefa"></i>
                 <ul>
-                    <li><a href="#main-content">HOME</a></li>
+                    <li><a href="#arrowupbtn">HOME</a></li>
                     <li><a href="#introduction">INTRODUCTION</a></li>
                     <li><a href="#objbg">OBJECTIVES</a></li>
                     <li><a href="#aboutmain">ABOUT</a></li>
@@ -199,12 +199,14 @@
                         <button type="submit" class="button-54">Submit</button>
                     </form>
                 </div>
-            </div>
-            <footer>
-                <p><em>2024 BSIT - 1J &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </em></p>
-            </footer>
+            </div>   
     </section>
+<!------AUTO UP------>
+    <a class="btnup" href="#arrowupbtn"><i class="fa-solid fa-circle-up"></i></a>
 <!------Footer--------->
+    <footer>
+        <p><em>2024 BSIT - 1J &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </em></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
