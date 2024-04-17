@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+html, body {
 
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -176,6 +179,7 @@ nav .fa{
     .nav-links #hidefa{
         padding-top: 2em;
         padding-right: 2em;
+        font-size: 20px;
     }
     nav img{
         width: 50px;
@@ -960,7 +964,9 @@ nav .fa{
 }
 @media (max-width: 400px){
     .map iframe{
-        margin-top: 50%;
+        margin-top: 40%;
+        width: 100%;
+        height: auto;
     }
     .contact{
         height: 90%;
@@ -968,7 +974,23 @@ nav .fa{
         padding-bottom: 20em;
     }
 }
-
+/*--------UP BUTTON---------*/
+.btnup{
+    position: fixed;
+    background-color: transparent;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    font-size:48px;
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 400px){
+    .btnup{
+        font-size: 30px;
+    }
+}
 /*---------FOOTER---------*/
 footer {
     position: fixed;
