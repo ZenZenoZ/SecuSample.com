@@ -7,6 +7,57 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-shadow: 2px 2px 5px #fff;
+}
+/*--------UP BUTTON---------*/
+.btnup{
+    position: fixed;
+    background-color: transparent;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 80px;
+    font-size:48px;
+    color: hsla(0, 0%, 0%, 0.5);
+    text-shadow: 2px 2px 5px #000000;
+}
+@media (max-width: 400px){
+    .btnup{
+        font-size: 30px;
+    }
+}
+/*---------FOOTER---------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 28px;
+    z-index: 1000;
+}
+
+footer p {
+	margin: 0;
+}
+@media (max-width: 700px){
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 15px;
+        z-index: 1000;
+        margin: 0;
+    }
+}
+@media (max-width: 400px){
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 15px;
+        z-index: 1000;
+        margin-bottom: 1em;
+    }
 }
 /*------MAIN--------*/
 .main-header{
@@ -27,7 +78,7 @@ nav{
 nav .navtext{
     color: #09ff00;
     font-size: 45px;
-    text-shadow: 2px 2px rgb(3, 77, 0);
+    text-shadow: 2px 2px 5px #000000;
     font-weight: bolder;
     margin-inline-start: .5em;
     
@@ -83,6 +134,7 @@ nav img{
 .main-text h1{
     font-size: 60px;
     margin-top: 5%;
+    text-shadow: 2px 2px 5px #ffffff;
 }
 .main-text p{
     margin: 10px 0 25px;
@@ -749,7 +801,7 @@ nav .fa{
 }
 /*--------About3---------*/
 .about-main3{
-    inline-size: 95%;
+    inline-size: 93%;
     block-size: 60vh;
     background-position: center;
     background-size: cover;
@@ -824,6 +876,7 @@ nav .fa{
 /*--------Contacts-------*/
 .contact-main{
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -852,6 +905,7 @@ nav .fa{
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 2em;
+    text-shadow: 2px 2px 5px #000000;
 }
 .contact-form::before{
     position: absolute;
@@ -879,6 +933,7 @@ nav .fa{
     background-color: unset;
     color: rgb(0, 0, 0);
     font-size: 1rem;
+    text-shadow: none;
     margin-bottom: .1rem;
 }
 .contact-form input:not(:first-child), .contact-form textarea, .contact-form button{
@@ -886,6 +941,7 @@ nav .fa{
 }
 .contact-form textarea{
     height: 6rem;
+    text-shadow: none;
     resize: none;
 }
 .contact-form button{
@@ -918,6 +974,7 @@ nav .fa{
 .contact-form button:active{
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
+    text-shadow: 2px 2px 5px #fff;
     left: 5px;
   }
 @media (max-width: 700px){
@@ -974,52 +1031,96 @@ nav .fa{
         padding-bottom: 20em;
     }
 }
-/*--------UP BUTTON---------*/
-.btnup{
-    position: fixed;
-    background-color: transparent;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
+/*------Lesson------*/
+header {
+    background-color: #00ff22;
+    color: #000000;
     text-align: center;
-    line-height: 60px;
-    font-size:48px;
-    color: rgb(255, 255, 255);
-}
-@media (max-width: 400px){
-    .btnup{
-        font-size: 30px;
-    }
-}
-/*---------FOOTER---------*/
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 28px;
-    z-index: 1000;
+    text-shadow: 2px 2px 5px #fff;
+    padding: 20px 0;
 }
 
-footer p {
-	margin: 0;
+.content-lesson {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 0 20px;
 }
-@media (max-width: 700px){
-    footer {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        height: 15px;
-        z-index: 1000;
-        margin: 0;
-    }
+
+.lessons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: radial-gradient(rgba(255, 255, 0, 0.5),rgba(0, 128, 0, 0.5)), url(./img/bgmain.jpg);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.849);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.lesson {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    background-color: #ffffff4d;
+    padding: 20px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 5px #fff;
+}
+.lesson p{
+    font-size: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 5px #fff;
+}
+.lesson-1 {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: radial-gradient(rgba(255, 255, 0, 0.5),rgba(0, 128, 0, 0.5)), url(./img/bg3.jpg);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.849);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.lesson-1 h1 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.lesson-1 h2 {
+    color: #000000;
+    margin-top: 20px;
+    font-size: 23px;
+    text-align: left;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.lesson-1 p {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 5px #fff;
 }
 @media (max-width: 400px){
-    footer {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        height: 15px;
-        z-index: 1000;
-        margin-bottom: 1em;
+    .lesson-1 h1 {
+        font-size: 25px;
+    }
+   .lesson-1 h2 {
+        font-size: 20px;
+    }
+    .lesson-1 p {
+        font-size: 18px;
+    }
+    .lesson {
+        flex: 1 0 100%;
+        text-align: center;
+        font-size: 15px;
     }
 }
